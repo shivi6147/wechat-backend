@@ -38,3 +38,6 @@ server.listen(port, () => {
     console.log(`Server is Working on ${port}`);
 });
 
+app.get("/", (req, res) => {
+    res.send("HEY ITS WORKING");
+})
