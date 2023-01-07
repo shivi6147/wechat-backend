@@ -37,3 +37,7 @@ io.on("connection", (socket) => {
 server.listen(port, () => {
     console.log(`Server is Working on ${port}`);
 });
+
+app.get("/", (req, res) => {
+    res.send("HELL ITS WORKING");
+})
